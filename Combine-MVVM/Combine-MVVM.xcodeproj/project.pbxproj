@@ -20,6 +20,8 @@
 		04B4C59D246F8156000A9D12 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C59C246F8156000A9D12 /* User.swift */; };
 		04B4C59F246F8314000A9D12 /* SearchUserRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C59E246F8314000A9D12 /* SearchUserRow.swift */; };
 		04B4C5A2246F8DC9000A9D12 /* KingfisherSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 04B4C5A1246F8DC9000A9D12 /* KingfisherSwiftUI */; };
+		04B4C5A5246FAF2F000A9D12 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 04B4C5A4246FAF2F000A9D12 /* Alamofire */; };
+		04B4C5A7246FAF86000A9D12 /* Alamofire+Combine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04B4C5A6246FAF86000A9D12 /* Alamofire+Combine.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,7 @@
 		04B4C59A246F7E4D000A9D12 /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
 		04B4C59C246F8156000A9D12 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		04B4C59E246F8314000A9D12 /* SearchUserRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserRow.swift; sourceTree = "<group>"; };
+		04B4C5A6246FAF86000A9D12 /* Alamofire+Combine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Combine.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04B4C5A2246F8DC9000A9D12 /* KingfisherSwiftUI in Frameworks */,
+				04B4C5A5246FAF2F000A9D12 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +120,7 @@
 				04B4C59E246F8314000A9D12 /* SearchUserRow.swift */,
 				04B4C59A246F7E4D000A9D12 /* SearchUserViewModel.swift */,
 				04B4C59C246F8156000A9D12 /* User.swift */,
+				04B4C5A6246FAF86000A9D12 /* Alamofire+Combine.swift */,
 				04B4C56C246F796F000A9D12 /* Assets.xcassets */,
 				04B4C571246F796F000A9D12 /* LaunchScreen.storyboard */,
 				04B4C574246F796F000A9D12 /* Info.plist */,
@@ -168,6 +173,7 @@
 			name = "Combine-MVVM";
 			packageProductDependencies = (
 				04B4C5A1246F8DC9000A9D12 /* KingfisherSwiftUI */,
+				04B4C5A4246FAF2F000A9D12 /* Alamofire */,
 			);
 			productName = "Combine-MVVM";
 			productReference = 04B4C563246F796A000A9D12 /* Combine-MVVM.app */;
@@ -243,6 +249,7 @@
 			mainGroup = 04B4C55A246F7969000A9D12;
 			packageReferences = (
 				04B4C5A0246F8DC9000A9D12 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				04B4C5A3246FAF2F000A9D12 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 04B4C564246F796A000A9D12 /* Products */;
 			projectDirPath = "";
@@ -289,6 +296,7 @@
 			files = (
 				04B4C599246F7B41000A9D12 /* SearchUserBar.swift in Sources */,
 				04B4C59B246F7E4D000A9D12 /* SearchUserViewModel.swift in Sources */,
+				04B4C5A7246FAF86000A9D12 /* Alamofire+Combine.swift in Sources */,
 				04B4C59F246F8314000A9D12 /* SearchUserRow.swift in Sources */,
 				04B4C59D246F8156000A9D12 /* User.swift in Sources */,
 				04B4C597246F79E8000A9D12 /* SearchUserView.swift in Sources */,
@@ -628,6 +636,14 @@
 				minimumVersion = 5.14.0;
 			};
 		};
+		04B4C5A3246FAF2F000A9D12 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -635,6 +651,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 04B4C5A0246F8DC9000A9D12 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = KingfisherSwiftUI;
+		};
+		04B4C5A4246FAF2F000A9D12 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 04B4C5A3246FAF2F000A9D12 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
