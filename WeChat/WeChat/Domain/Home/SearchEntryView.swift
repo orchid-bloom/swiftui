@@ -25,10 +25,12 @@ struct SearchEntryView: View {
           Spacer()
         }
       }
-      .padding(EdgeInsets(top: 6, leading: 6, bottom: 6, trailing: 6))
-      .background(Color("search_corner_background"))
+      .padding(EdgeInsets(top: 6, leading: 0, bottom: 6, trailing: 0))
+      .background(Color.white)
       .cornerRadius(6)
     }
-    .background(Color("light_gray"))
+    .padding(EdgeInsets(top: 6, leading: -10, bottom: 6, trailing: -10))
+    .listRowBackground(Color("search_corner_background"))
+    .sheet(isPresented: $isSearchPresented, content: { SearchView() })
   }
 }

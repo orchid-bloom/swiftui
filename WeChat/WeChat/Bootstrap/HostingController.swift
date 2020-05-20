@@ -11,12 +11,27 @@ import Combine
 
 class HostingController<Content: View>: UIHostingController<HostingMiddle<Content>> {
   
+  private var statusBarStyle: UIStatusBarStyle = .default {
+    didSet {
+      if (oldValue != statusBarStyle) {
+        setNeedsStatusBarAppearanceUpdate()
+      }
+    }
+  }
+  
   init(rootView: Content) {
     super.init(rootView: HostingMiddle(content: rootView))
+    
+    StatusBarStyle.Key.defaultValue.getter = { self.statusBarStyle }
+    StatusBarStyle.Key.defaultValue.setter = { self.statusBarStyle = $0}
   }
   
   @objc required dynamic init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
+  }
+  
+  override var preferredStatusBarStyle: UIStatusBarStyle {
+    statusBarStyle
   }
 }
 

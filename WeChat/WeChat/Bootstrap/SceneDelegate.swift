@@ -25,6 +25,13 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   func configureAppearance() {
     UITableView.appearance().backgroundColor = .clear
     UITableView.appearance().separatorStyle = .none
+    
+    let backImage = UIImage(named: "back")?.withRenderingMode(.alwaysOriginal)
+    UINavigationBar.appearance().backIndicatorImage = backImage
+    UINavigationBar.appearance().backIndicatorTransitionMaskImage = backImage
+    UINavigationBar.appearance().shadowImage = UIImage()
+    UINavigationBar.appearance().tintColor = UIColor(named: "navigation")
+    UINavigationBar.appearance().barTintColor = UIColor(named: "navigation")
   }
   
   func configureWindow(windowScene: UIWindowScene) {
