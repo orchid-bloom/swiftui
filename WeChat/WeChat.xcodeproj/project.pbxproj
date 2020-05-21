@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,7 @@
 		040C7DAC24750F910007BF49 /* MomentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C7DAB24750F910007BF49 /* MomentViewModel.swift */; };
 		040C7DAE24750FCF0007BF49 /* Moment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C7DAD24750FCF0007BF49 /* Moment.swift */; };
 		040C7DB124751EAA0007BF49 /* StatusBarStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 040C7DB024751EAA0007BF49 /* StatusBarStyle.swift */; };
+		0418C9D6247660680069D484 /* VideoPlayer in Frameworks */ = {isa = PBXBuildFile; productRef = 0418C9D5247660680069D484 /* VideoPlayer */; };
 		0443104D24736BD400275597 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443104C24736BD400275597 /* AppDelegate.swift */; };
 		0443104F24736BD400275597 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443104E24736BD400275597 /* SceneDelegate.swift */; };
 		0443105124736BD400275597 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0443105024736BD400275597 /* RootView.swift */; };
@@ -116,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0418C9D6247660680069D484 /* VideoPlayer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +380,9 @@
 			dependencies = (
 			);
 			name = WeChat;
+			packageProductDependencies = (
+				0418C9D5247660680069D484 /* VideoPlayer */,
+			);
 			productName = WeChat;
 			productReference = 0443104924736BD400275597 /* WeChat.app */;
 			productType = "com.apple.product-type.application";
@@ -450,6 +455,9 @@
 				Base,
 			);
 			mainGroup = 0443104024736BD400275597;
+			packageReferences = (
+				0418C9D4247660680069D484 /* XCRemoteSwiftPackageReference "VideoPlayer" */,
+			);
 			productRefGroup = 0443104A24736BD400275597 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -850,6 +858,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0418C9D4247660680069D484 /* XCRemoteSwiftPackageReference "VideoPlayer" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wxxsw/VideoPlayer";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0418C9D5247660680069D484 /* VideoPlayer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0418C9D4247660680069D484 /* XCRemoteSwiftPackageReference "VideoPlayer" */;
+			productName = VideoPlayer;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0443104124736BD400275597 /* Project object */;
 }
