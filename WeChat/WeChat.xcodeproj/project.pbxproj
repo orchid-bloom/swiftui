@@ -92,6 +92,7 @@
 		044A0B912474CAF000991E7A /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
 		044A0B932474D2CC00991E7A /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		044A0B952474D2E100991E7A /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		0470E19C24792A30003049C5 /* WeChat.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = WeChat.entitlements; sourceTree = "<group>"; };
 		04AC96082473A8D50057ABCC /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		04AC960B2473A99B0057ABCC /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		04AC960D2473A9A40057ABCC /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
@@ -179,6 +180,7 @@
 		0443104B24736BD400275597 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
+				0470E19C24792A30003049C5 /* WeChat.entitlements */,
 				04AC96062473A86D0057ABCC /* Bootstrap */,
 				04AC96072473A8A40057ABCC /* Root */,
 				040C7DAF24751E940007BF49 /* Theme */,
@@ -698,6 +700,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WeChat/WeChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WeChat/Preview Content\"";
 				DEVELOPMENT_TEAM = NSP28TH28W;
@@ -709,6 +712,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tema.tian.WeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -718,6 +722,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WeChat/WeChat.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"WeChat/Preview Content\"";
 				DEVELOPMENT_TEAM = NSP28TH28W;
@@ -729,6 +734,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tema.tian.WeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

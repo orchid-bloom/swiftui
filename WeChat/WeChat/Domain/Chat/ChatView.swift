@@ -44,6 +44,7 @@ struct ChatCell: View {
   
   private func background() -> some View {
     return RoundedRectangle(cornerRadius: 3)
+      
       .foregroundColor(Color("chat_me_background"))
   }
 }

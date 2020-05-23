@@ -31,6 +31,7 @@ struct SearchEntryView: View {
     }
     .padding(EdgeInsets(top: 6, leading: -10, bottom: 6, trailing: -10))
     .listRowBackground(Color("search_corner_background"))
+//    .alert(isPresented: $isSearchPresented, content: { Alert(title: Text("123"), message: Text("123"), primaryButton: .default(Text("ok")), secondaryButton: .cancel()) })
     .sheet(isPresented: $isSearchPresented, content: { SearchView() })
   }
 }
