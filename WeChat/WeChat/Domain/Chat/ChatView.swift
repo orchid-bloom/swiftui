@@ -38,6 +38,7 @@ struct ChatCell: View {
       Text(message.text ?? "")
         .padding()
         .frame(width: UIScreen.main.bounds.width - 40, alignment: .leading)
+//        .layoutPriority(1)
     }
     .background(background())
   }

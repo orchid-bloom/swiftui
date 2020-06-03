@@ -19,3 +19,10 @@ extension View {
   }
 }
 
+
+//Function declares an opaque return type, but the return statements in its body do not have matching underlying types
+extension View {
+  func eraseToAnyView() -> AnyView { AnyView(self) }
+}
+
+

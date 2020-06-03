@@ -23,6 +23,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
   }
   
   func configureAppearance() {
+    
+    Bundle(path: "/Applications/InjectionIII.app/Contents/Resources/iOSInjection.bundle")?.load()
+    
     UITableView.appearance().backgroundColor = .clear
     UITableView.appearance().separatorStyle = .none
     

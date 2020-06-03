@@ -66,6 +66,29 @@ struct ContactCell: View {
   let isLast: Bool
 
   var body: some View {
+    
+//    HStack(alignment: .lastTextBaseline) {  //底部基线对齐
+//      Text(member.name)
+//        .font(.system(size: 14, weight: .regular))
+//        .foregroundColor(.primary)
+//        .layoutPriority(1)
+//
+//      Image(member.icon)
+//        .renderingMode(.original)
+//        .resizable()
+//        .frame(width: 48, height: 48)
+//        .cornerRadius(8)
+//        .alignmentGuide(.lastTextBaseline) { (d)  in  //基于底部基线对齐偏移
+//          d[.bottom] * 0.927
+//      }
+//
+//      Text(member.name)
+//        .font(.system(size: 14, weight: .regular))
+//        .foregroundColor(.primary)
+//        .layoutPriority(1)
+//    }
+    
+    
     VStack(alignment: .leading) {
       HStack {
         Image(member.icon)

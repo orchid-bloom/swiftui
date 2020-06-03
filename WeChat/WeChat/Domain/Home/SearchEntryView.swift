@@ -13,15 +13,18 @@ struct SearchEntryView: View {
   @State private var isSearchPresented: Bool = false
   
   var body: some View {
+
     Button(action: {self.isSearchPresented.toggle()}) {
       VStack(alignment: .center) {
         HStack{
           Spacer()
+          Divider()
           Image(systemName: "magnifyingglass")
             .resizable()
             .frame(width: 13, height: 13)
             .foregroundColor(.secondary)
           Text("搜索")
+          Divider()
           Spacer()
         }
       }
