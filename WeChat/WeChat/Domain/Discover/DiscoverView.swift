@@ -60,7 +60,6 @@ struct DiscoverView: View {
       }.background(Color("cell"))
     }.onAppear {
       self.root.tabNavigationHidden = false
-      self.root.tabSelection = 2
     }
       .background(Color("light_gray"))
   }

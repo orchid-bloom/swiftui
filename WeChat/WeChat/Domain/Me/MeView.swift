@@ -23,7 +23,9 @@ struct MeView: View {
         VStack(spacing: 0) {
 
           Group {
-            Header(member: viewModel.me)
+            NavigationLink(destination: LoginView()) {
+              Header(member: viewModel.me)
+            }
             Line()
           }
 
@@ -51,7 +53,6 @@ struct MeView: View {
       }
     }.onAppear {
       self.root.tabNavigationHidden = true
-      self.root.tabSelection = 3
     }
       .background(Color("light_gray"))
   }
@@ -73,6 +74,7 @@ private struct Header: View {
       HStack {
         Spacer()
         Image(systemName: "camera.fill")
+          .renderingMode(.original)
           .padding(.trailing, 6)
       }
         .frame(height: 44)
@@ -86,6 +88,7 @@ private struct Header: View {
 
         VStack(alignment: .leading, spacing: 8) {
           Text(member.name)
+            .foregroundColor(.black)
             .font(.system(size: 22, weight: .medium))
           HStack {
             Text("微信号：\(member.identifier ?? "")")
@@ -94,7 +97,9 @@ private struct Header: View {
             Spacer()
 
             Image("me_qrcode")
+              .renderingMode(.original)
             Image("cell_detail_indicator")
+              .renderingMode(.original)
           }
         }
       }

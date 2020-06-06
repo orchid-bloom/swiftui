@@ -1,0 +1,19 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Keychain+FaceID' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  pod 'KeychainAccess'
+  # Pods for Keychain+FaceID
+
+  target 'Keychain+FaceIDTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Keychain+FaceIDUITests' do
+    # Pods for testing
+  end
+
+end

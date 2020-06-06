@@ -35,7 +35,6 @@ struct ContactView: View {
         }
       }
     }.onAppear {
-      self.root.tabSelection = 1
       self.root.tabNavigationHidden = false
       self.root.tabNavigationTitle = "联系人"
       self.root.tabNavigationBarTrailingItems = .init(Image("person.badge.plus"))
