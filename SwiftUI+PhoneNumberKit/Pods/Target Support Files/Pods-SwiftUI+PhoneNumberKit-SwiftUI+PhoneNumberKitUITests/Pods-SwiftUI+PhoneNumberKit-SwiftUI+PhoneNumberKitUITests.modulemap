@@ -1,0 +1,6 @@
+framework module Pods_SwiftUI_PhoneNumberKit_SwiftUI_PhoneNumberKitUITests {
+  umbrella header "Pods-SwiftUI+PhoneNumberKit-SwiftUI+PhoneNumberKitUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
